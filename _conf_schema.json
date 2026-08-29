@@ -1,0 +1,74 @@
+{
+    "enable_record": {
+        "description": "是否记录群聊消息用于词云统计（关闭后停止记录，已有数据仍可查询）",
+        "type": "bool",
+        "hint": "数据仅保存在机器人本地 SQLite 中，不会上传",
+        "default": true
+    },
+    "keep_days": {
+        "description": "消息保留天数，超过后自动清理（0 表示永久保留）",
+        "type": "int",
+        "default": 90
+    },
+    "days_default": {
+        "description": "/词云 不带参数时统计的天数",
+        "type": "int",
+        "default": 7
+    },
+    "days_max": {
+        "description": "允许统计的最大天数",
+        "type": "int",
+        "default": 90
+    },
+    "min_messages": {
+        "description": "生成词云所需的最少消息条数",
+        "type": "int",
+        "default": 10
+    },
+    "top_n": {
+        "description": "词云最多显示的词数",
+        "type": "int",
+        "default": 100
+    },
+    "min_word_len": {
+        "description": "中文词的最短长度（1 = 允许单字词）",
+        "type": "int",
+        "default": 2
+    },
+    "extra_stopwords": {
+        "description": "额外停用词列表（不想出现在词云里的词）",
+        "type": "list",
+        "items": {
+            "type": "string"
+        },
+        "default": []
+    },
+    "font_path": {
+        "description": "中文字体文件路径（.ttf/.ttc/.otf），留空则自动查找系统字体",
+        "type": "string",
+        "hint": "例如 C:/Windows/Fonts/msyh.ttc；也可以把字体文件放入数据目录的 fonts/ 文件夹",
+        "default": ""
+    },
+    "width": {
+        "description": "词云画布宽度（像素）",
+        "type": "int",
+        "default": 1000
+    },
+    "height": {
+        "description": "词云画布高度（像素）",
+        "type": "int",
+        "default": 600
+    },
+    "background_color": {
+        "description": "词云背景颜色",
+        "type": "string",
+        "hint": "如 white、black、#1a1a2e",
+        "default": "white"
+    },
+    "colormap": {
+        "description": "配色方案（matplotlib 色带名称）",
+        "type": "string",
+        "hint": "可选 viridis、plasma、tab10、rainbow 等",
+        "default": "viridis"
+    }
+}

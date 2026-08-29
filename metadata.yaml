@@ -1,0 +1,10 @@
+---
+name: astrbot_plugin_wordcloud # 插件唯一识别名，与文件夹名保持一致
+display_name: 群聊词云 # 在插件市场/WebUI 中展示的名字
+short_desc: 统计群聊消息，生成词云图与水群排行榜
+desc: 统计群聊消息并生成词云图，附带水群排行榜，支持停用词、字体、配色等配置。插件仍在开发中，可能存在 Bug。
+version: v1.0.0 # 插件版本号
+author: xiaowan138 # 作者
+repo: https://github.com/xiaowan138/astrbot_plugin_wordcloud # 插件仓库地址
+astrbot_version: ">=4.5.0" # 要求的 AstrBot 版本范围（不要加 v 前缀）
+---
