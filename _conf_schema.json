@@ -6,7 +6,7 @@
         "default": true
     },
     "keep_days": {
-        "description": "消息保留天数，超过后自动清理（0 表示永久保留）",
+        "description": "消息保留天数，超过后每天自动清理（0 表示永久保留）",
         "type": "int",
         "default": 90
     },
@@ -24,6 +24,11 @@
         "description": "生成词云所需的最少消息条数",
         "type": "int",
         "default": 10
+    },
+    "cache_seconds": {
+        "description": "同一统计范围重复生成词云的缓存时间（秒），0 表示不缓存",
+        "type": "int",
+        "default": 120
     },
     "top_n": {
         "description": "词云最多显示的词数",
